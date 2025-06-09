@@ -98,4 +98,8 @@ body {
   #head-image {
     display: none;
   }
+  #head,
+  #content {
+    margin: 0.5rem;
+  }
 }
