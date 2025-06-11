@@ -27,11 +27,62 @@ Der Begriff Digitalsteuer bezeichnet verschiedene Konzepte zur Mindestbesteuerun
       <div class="ver-divider"></div>
       <h2 id="text-contra">Contra</h2>
       <div id="pro-site">
-        <p>test 1</p>
-        <p>test 2</p>
+        <div id="pro-1" onclick="expand(this.id)">
+          Mehr Gerechtigkeit für kleine Unternehmen
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="pro-2" onclick="expand(this.id)">
+          Mehr Einnahmen für den Staat
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="pro-3" onclick="expand(this.id)">
+          Gleichbehandlung von digitalen und traditionellen Unternehmen
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="pro-4" onclick="expand(this.id)">
+          Subventionen für wirtschaftliche Digitalprojekte möglich
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="pro-5" onclick="expand(this.id)">
+          Die EU würde etwa 5 Mrd € im Jahr einnehmen
+          <p>Platzhalter ;)</p>
+        </div>
       </div>
       <div class="ver-divider"></div>
-      <div id="contra-site">seite-contra</div>
+      <div id="contra-site">
+        <div id="contra-1" onclick="expand(this.id)">
+          Andere Länder könnten eine "Kontersteuer" einführen
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="contra-2" onclick="expand(this.id)">
+          Technisch schwer Umsetzbar
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="contra-3" onclick="expand(this.id)">
+          Ausländische Unternehmen könnten sich aus dem europäischen Markt
+          zurückziehen
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="contra-4" onclick="expand(this.id)">
+          Steigende Kosten für den Verbraucher
+          <p>Platzhalter ;)</p>
+        </div>
+        <div id="contra-5" onclick="expand(this.id)">
+          Kosten für die Kontrolle der Digitalsteuer
+          <p>Platzhalter ;)</p>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+    function expand(id) {
+      const element = document.getElementById(id);
+      for (const e of element.children)
+        if (e.style.display === "none" || e.style.display === "") {
+          e.style.display = "block";
+        } else {
+          e.style.display = "none";
+        }
+    }
+  </script>
 </body>

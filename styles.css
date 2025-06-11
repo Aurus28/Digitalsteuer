@@ -85,11 +85,31 @@ body {
   align-items: center;
 }
 
+#pro-site > div,
+#contra-site > div {
+  border: 0.2rem solid var(--accent-1-color);
+  border-radius: 1rem;
+  margin: 0;
+  padding: 1rem;
+  flex: 1 0 0%;
+  cursor: pointer;
+}
+
+#pro-site > div > p,
+#contra-site > div > p {
+  display: none;
+}
+
+#contra-site > div:hover,
+#pro-site > div:hover {
+  background-color: var(--accent-2-color);
+}
+
 #pro-site > p,
 #contra-site > p {
   flex: 1 0 0%;
   margin: 0;
-  border: 0.2em solid var(--accent-1-color);
+  border: 0.2rem solid var(--accent-1-color);
   border-radius: 1rem;
   padding: 1rem;
 }
