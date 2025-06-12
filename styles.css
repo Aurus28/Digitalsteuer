@@ -7,17 +7,18 @@ body {
   background-color: var(--background-color);
   color: white;
   justify-content: center;
+  font-family: "Verdana", "sans-serif";
 }
 
 #head {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin: 2rem;
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   border: 0.2rem solid var(--accent-1-color);
-  border-radius: 1em;
+  border-radius: 1rem;
   padding: 1rem;
 }
 #head-text {
@@ -28,17 +29,16 @@ body {
 #heading {
   background-color: var(--accent-2-color);
   width: fit-content;
-  padding: 0.2em;
-  border-radius: 0.2em;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
   margin: 0;
 }
 
 #definition {
   overflow-x: auto;
   white-space: pre-wrap;
-  line-height: 1.5em;
   margin: 0;
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 #head-image {
@@ -51,10 +51,10 @@ body {
 #content {
   margin: 2rem;
   display: grid;
-  font-size: 1.5em;
-  grid-template-columns: 1fr 0.2em 1fr;
+  font-size: 1.5rem;
+  grid-template-columns: 1fr 0.2rem 1fr;
   border: 0.2rem solid var(--accent-1-color);
-  border-radius: 1em;
+  border-radius: 1rem;
 }
 
 .ver-divider {
@@ -63,21 +63,22 @@ body {
   padding: 0;
 }
 
-#content > h2 {
+#contra-column > h2,
+#pro-column > h2 {
   background-color: var(--accent-2-color);
   width: fit-content;
   align-self: center;
   justify-self: center;
   margin: 0;
-  padding: 0.2em;
+  padding: 0.2rem;
   margin: 1rem;
-  border-radius: 0.2em;
+  border-radius: 0.5rem;
 }
 
 #pro-site,
 #contra-site {
   padding: 1rem;
-  border-top: 0.2em solid var(--accent-1-color);
+  border-top: 0.2rem solid var(--accent-1-color);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -85,8 +86,8 @@ body {
   align-items: center;
 }
 
-#pro-site > div,
-#contra-site > div {
+#pro-site > fieldset,
+#contra-site > fieldset {
   border: 0.2rem solid var(--accent-1-color);
   border-radius: 1rem;
   margin: 0;
@@ -95,13 +96,16 @@ body {
   cursor: pointer;
 }
 
-#pro-site > div > p,
-#contra-site > div > p {
+#pro-site > fieldset > p,
+#contra-site > fieldset > p {
   display: none;
+  border-top: 0.2rem dotted var(--accent-1-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
-#contra-site > div:hover,
-#pro-site > div:hover {
+#contra-site > fieldset:hover,
+#pro-site > fieldset:hover {
   background-color: var(--accent-2-color);
 }
 
@@ -121,5 +125,19 @@ body {
   #head,
   #content {
     margin: 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .vert-divider {
+    display: none;
+  }
+  #content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  #contra-column {
+    border-top: 0.2rem solid var(--accent-1-color);
   }
 }

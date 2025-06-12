@@ -23,53 +23,99 @@ Der Begriff Digitalsteuer bezeichnet verschiedene Konzepte zur Mindestbesteuerun
       <img id="head-image" src="icon-2.png" />
     </div>
     <div id="content">
-      <h2 id="text-pro">Pro</h2>
-      <div class="ver-divider"></div>
-      <h2 id="text-contra">Contra</h2>
-      <div id="pro-site">
-        <div id="pro-1" onclick="expand(this.id)">
-          Mehr Gerechtigkeit für kleine Unternehmen
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="pro-2" onclick="expand(this.id)">
-          Mehr Einnahmen für den Staat
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="pro-3" onclick="expand(this.id)">
-          Gleichbehandlung von digitalen und traditionellen Unternehmen
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="pro-4" onclick="expand(this.id)">
-          Subventionen für wirtschaftliche Digitalprojekte möglich
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="pro-5" onclick="expand(this.id)">
-          Die EU würde etwa 5 Mrd € im Jahr einnehmen
-          <p>Platzhalter ;)</p>
+      <div id="pro-column">
+        <h2 id="text-pro">Pro</h2>
+        <div id="pro-site">
+          <fieldset id="pro-1" onclick="expand(this.id)">
+            Mehr Gerechtigkeit für kleine Unternehmen
+            <legend>1</legend>
+            <p>
+              Lokale Unternehmen haben digital, sowie analog mehr Chancen ihre
+              Waren zu verkaufen, weil nun auch die großen ausländischen Firmen
+              Steuern zahlen müssen.
+            </p>
+          </fieldset>
+          <fieldset id="pro-2" onclick="expand(this.id)">
+            Mehr Einnahmen für den Staat
+            <legend>2</legend>
+            <p>
+              Der Staat bekommt das das Geld was in Form von der Digitalsteuer
+              den Unternehmen abgezogen wird.
+            </p>
+          </fieldset>
+          <fieldset id="pro-3" onclick="expand(this.id)">
+            Gleichbehandlung von digitalen und traditionellen Unternehmen
+            <legend>3</legend>
+            <p>
+              Traditionelle Unternehmen müssen Steuer auf Waren zahlen. Digitale
+              Unternehmen müssen durch die Digitalsteuer dann auch Steuern
+              zahlen.
+            </p>
+          </fieldset>
+          <fieldset id="pro-4" onclick="expand(this.id)">
+            Subventionen für wirtschaftliche Digitalprojekte möglich
+            <legend>4</legend>
+            <p>
+              Durch die Steuereinnahmen hat der Staat mehr Mittel für
+              Subventionen aller Art.
+            </p>
+          </fieldset>
+          <fieldset id="pro-5" onclick="expand(this.id)">
+            Die EU würde etwa 5 Mrd € im Jahr einnehmen
+            <legend>5</legend>
+            <p>Das ist mehr als man denken könnte. Oder nicht?</p>
+          </fieldset>
         </div>
       </div>
       <div class="ver-divider"></div>
-      <div id="contra-site">
-        <div id="contra-1" onclick="expand(this.id)">
-          Andere Länder könnten eine "Kontersteuer" einführen
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="contra-2" onclick="expand(this.id)">
-          Technisch schwer Umsetzbar
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="contra-3" onclick="expand(this.id)">
-          Ausländische Unternehmen könnten sich aus dem europäischen Markt
-          zurückziehen
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="contra-4" onclick="expand(this.id)">
-          Steigende Kosten für den Verbraucher
-          <p>Platzhalter ;)</p>
-        </div>
-        <div id="contra-5" onclick="expand(this.id)">
-          Kosten für die Kontrolle der Digitalsteuer
-          <p>Platzhalter ;)</p>
+      <div id="contra-column">
+        <h2 id="text-contra">Contra</h2>
+        <div id="contra-site">
+          <fieldset id="contra-1" onclick="expand(this.id)">
+            Andere Länder könnten eine "Kontersteuer" einführen
+            <legend>1</legend>
+            <p>
+              Als Gegenzug könnten andere Länder Steuern auf deutsche Produkte
+              einführen.
+            </p>
+          </fieldset>
+          <fieldset id="contra-2" onclick="expand(this.id)">
+            Technisch schwer Umsetzbar
+            <legend>2</legend>
+            <p>
+              Wie sollte man überprüfen, dass alle Unternehmen die Steuer
+              zahlen? Besonders die Nutzung von Proxys (VPN) würde dies
+              erheblich erschweren.
+            </p>
+          </fieldset>
+          <fieldset id="contra-3" onclick="expand(this.id)">
+            Ausländische Unternehmen könnten sich aus dem europäischen Markt
+            zurückziehen
+            <legend>3</legend>
+            <p>
+              Durch die Steuer könnte es sich für ausländische Unternehmen nicht
+              mehr lohnen ihre digitalen Dienste anzubieten.
+            </p>
+          </fieldset>
+          <fieldset id="contra-4" onclick="expand(this.id)">
+            Steigende Kosten für den Verbraucher
+            <legend>4</legend>
+            <p>
+              Damit sich das Angebot für Firmen lohnt könnte es sein, dass sie
+              ihre Kosten steigern um den Verlust durch die Steuer
+              auszugleichen. Der Verbraucher leidet.
+            </p>
+          </fieldset>
+          <fieldset id="contra-5" onclick="expand(this.id)">
+            Kosten für die Kontrolle der Digitalsteuer
+            <legend>5</legend>
+            <p>
+              Ähnlich schwierig wie das Umsetzen der Steuer wäre die Kontrolle
+              dieser. Wie sollte man überprüfen, ob Unternehmen wirklich genug
+              Steuer zahlen? Bei dieser Kontrolle würden zusätzliche Kosten für
+              den Staat entstehen.
+            </p>
+          </fieldset>
         </div>
       </div>
     </div>
@@ -77,12 +123,16 @@ Der Begriff Digitalsteuer bezeichnet verschiedene Konzepte zur Mindestbesteuerun
   <script>
     function expand(id) {
       const element = document.getElementById(id);
-      for (const e of element.children)
+      for (const e of element.children) {
+        if (e.tagName === "LEGEND") {
+          continue;
+        }
         if (e.style.display === "none" || e.style.display === "") {
           e.style.display = "block";
         } else {
           e.style.display = "none";
         }
+      }
     }
   </script>
 </body>
